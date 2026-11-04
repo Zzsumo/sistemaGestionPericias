@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuevo informe | JustiData</title>
+  </head>
+
+  <body>
+    <!-- ENCABEZADO -->
+    <header>
+      <h1>JustiData Solutions S.A.</h1>
+      <p>Sistema de Gestión y Seguimiento de Pericias</p>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Búsqueda de informes</a></li>
+          <li><a href="cargar-informe.html">Nuevo informe</a></li>
+          <li><a href="visualizar-informe.html">Visualizar informe</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+      <h2>Registro de nuevo informe pericial</h2>
+      <p>
+        Complete los siguientes campos para registrar un informe en el sistema.
+      </p>
+
+      <form action="#" method="post">
+        <!-- IDENTIFICACION DE LA PERICIA -->
+        <section>
+          <h3>1. Datos de la pericia</h3>
+
+          <label for="organismo">Organismo solicitante:</label>
+          <input type="text" id="organismo" name="organismo" required />
+
+          <label for="numero">Número de pericia:</label>
+          <input type="text" id="numero" name="numero" required />
+
+          <label for="expediente">Número de expediente:</label>
+          <input type="text" id="expediente" name="expediente" required />
+
+          <label for="fecha-solicitud">Fecha de solicitud:</label>
+          <input
+            type="date"
+            id="fecha-solicitud"
+            name="fecha-solicitud"
+            required
+          />
+
+          <label for="tipo">Tipo de pericia:</label>
+          <select id="tipo" name="tipo" required>
+            <option value="">Seleccione un tipo</option>
+            <option value="medica">Médica</option>
+            <option value="psicologica">Psicológica</option>
+            <option value="informatica">Informática</option>
+            <option value="contable">Contable</option>
+            <option value="accidentologica">Accidentológica</option>
+            <option value="documentologica">Documentológica</option>
+          </select>
+
+          <label for="area">Área técnica responsable:</label>
+          <input type="text" id="area" name="area" required />
+
+          <label for="descripcion-caso">Descripción del caso:</label>
+          <textarea
+            id="descripcion-caso"
+            name="descripcion-caso"
+            rows="4"
+            required
+          ></textarea>
+        </section>
+
+        <!-- DATOS DEL INFORME -->
+        <section>
+          <h3>2. Información del informe</h3>
+
+          <label for="tipo-informe">Tipo de informe:</label>
+          <select id="tipo-informe" name="tipo-informe" required>
+            <option value="">Seleccione una opción</option>
+            <option value="informe-pericial">Informe pericial inicial</option>
+            <option value="ampliacion">Ampliación de pericia</option>
+          </select>
+
+          <label for="fecha-informe">Fecha de elaboración:</label>
+          <input type="date" id="fecha-informe" name="fecha-informe" required />
+
+          <label for="perito">Perito responsable:</label>
+          <input type="text" id="perito" name="perito" required />
+
+          <label for="rol-perito">Rol del perito:</label>
+          <select id="rol-perito" name="rol-perito">
+            <option value="">Seleccione un rol</option>
+            <option value="oficial">Perito oficial</option>
+            <option value="oficio">Perito de oficio</option>
+            <option value="parte">Perito de parte</option>
+          </select>
+
+          <label for="descripcion-informe"
+            >Descripción del informe y hallazgos técnicos:</label
+          >
+          <textarea
+            id="descripcion-informe"
+            name="descripcion-informe"
+            rows="6"
+            required
+          ></textarea>
+        </section>
+
+        <!-- BOTONES -->
+        <section>
+          <button type="submit">Registrar informe</button>
+          <button type="reset">Limpiar formulario</button>
+        </section>
+      </form>
+    </main>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+      <p>
+        JustiData Solutions S.A. | Sistema de Gestión y Seguimiento de Pericias
+      </p>
+      <p>© 2026 - Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

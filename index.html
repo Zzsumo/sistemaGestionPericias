@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Búsqueda de informes | JustiData</title>
+  </head>
+
+  <body>
+    <!-- ENCABEZADO -->
+    <header>
+      <h1>JustiData Solutions S.A.</h1>
+      <p>Sistema de Gestión y Seguimiento de Pericias</p>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Búsqueda de informes</a></li>
+          <li><a href="cargar-informe.html">Nuevo informe</a></li>
+          <li><a href="visualizar-informe.html">Visualizar informe</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+      <h2>Búsqueda de informes periciales</h2>
+      <p>
+        Consulte los informes registrados en el sistema utilizando los
+        siguientes filtros.
+      </p>
+
+      <!-- FORMULARIO DE BUSQUEDA -->
+      <section>
+        <h3>Filtros de búsqueda</h3>
+
+        <form action="#" method="get">
+          <label for="organismo">Organismo solicitante:</label>
+          <input type="text" id="organismo" name="organismo" />
+
+          <label for="numero">Número de pericia:</label>
+          <input type="text" id="numero" name="numero" />
+
+          <label for="expediente">Número de expediente:</label>
+          <input type="text" id="expediente" name="expediente" />
+
+          <label for="tipo">Tipo de pericia:</label>
+          <select id="tipo" name="tipo">
+            <option value="">Todos</option>
+            <option value="medica">Médica</option>
+            <option value="psicologica">Psicológica</option>
+            <option value="informatica">Informática</option>
+            <option value="contable">Contable</option>
+            <option value="accidentologica">Accidentológica</option>
+            <option value="documentologica">Documentológica</option>
+          </select>
+
+          <label for="estado">Estado de la pericia:</label>
+          <select id="estado" name="estado">
+            <option value="">Todos</option>
+            <option value="solicitada">Solicitada</option>
+            <option value="analisis">En análisis</option>
+            <option value="evaluacion">En proceso de evaluación</option>
+            <option value="informe">En elaboración de informe</option>
+            <option value="finalizada">Finalizada</option>
+            <option value="suspendida">Suspendida</option>
+            <option value="cancelada">Cancelada</option>
+            <option value="impugnada">Impugnada</option>
+          </select>
+
+          <button type="submit">Buscar informes</button>
+          <button type="reset">Limpiar filtros</button>
+        </form>
+      </section>
+
+      <!-- RESULTADOS -->
+      <section>
+        <h3>Resultados de búsqueda</h3>
+
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Número de pericia</th>
+              <th>Organismo</th>
+              <th>Expediente</th>
+              <th>Tipo de pericia</th>
+              <th>Fecha</th>
+              <th>Estado</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>001/2026</td>
+              <td>Juzgado Civil N° 1</td>
+              <td>1234/2026</td>
+              <td>Informática</td>
+              <td>10/10/2026</td>
+              <td>En análisis</td>
+              <td>
+                <a href="visualizar-informe.html">Ver informe</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>002/2026</td>
+              <td>Fiscalía N° 2</td>
+              <td>5678/2026</td>
+              <td>Contable</td>
+              <td>15/10/2026</td>
+              <td>Finalizada</td>
+              <td>
+                <a href="visualizar-informe.html">Ver informe</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+      <p>
+        JustiData Solutions S.A. | Sistema de Gestión y Seguimiento de Pericias
+      </p>
+      <p>© 2026 - Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
