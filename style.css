@@ -1,0 +1,236 @@
+/* ------------------------------
+   ESTILOS GENERALES
+------------------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f4f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ------------------------------
+   ENCABEZADO
+------------------------------ */
+
+header {
+  background-color: #17365d;
+  color: white;
+  padding: 22px 40px;
+}
+
+header h1 {
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+
+header p {
+  color: #dce6f1;
+  font-size: 14px;
+}
+
+/* ------------------------------
+   MENÚ DE NAVEGACIÓN
+------------------------------ */
+
+nav {
+  background-color: #244b75;
+  padding: 12px 40px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 25px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #a9c9ed;
+}
+
+/* ------------------------------
+   CONTENIDO PRINCIPAL
+------------------------------ */
+
+main {
+  max-width: 1100px;
+  margin: 35px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  color: #17365d;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #244b75;
+  margin: 20px 0 12px;
+}
+
+/* ------------------------------
+   SECCIONES Y FORMULARIOS
+------------------------------ */
+
+section {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd2da;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #3478b9;
+  box-shadow: 0 0 4px rgba(52, 120, 185, 0.3);
+}
+
+/* ------------------------------
+   BOTONES
+------------------------------ */
+
+button {
+  background-color: #245b91;
+  color: white;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #17365d;
+}
+
+.boton-secundario {
+  background-color: #6c757d;
+}
+
+/* ------------------------------
+   TABLAS
+------------------------------ */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: white;
+}
+
+th {
+  background-color: #244b75;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f0f4f8;
+}
+
+table a {
+  color: #245b91;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ------------------------------
+   ENLACES
+------------------------------ */
+
+a {
+  color: #245b91;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------------
+   PIE DE PÁGINA
+------------------------------ */
+
+footer {
+  background-color: #17365d;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  margin-top: 40px;
+  font-size: 13px;
+}
+
+/* ------------------------------
+   DISEÑO RESPONSIVE
+------------------------------ */
+
+@media (max-width: 700px) {
+  header,
+  nav {
+    padding: 18px;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  main {
+    margin: 20px auto;
+  }
+
+  section {
+    padding: 15px;
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 600px;
+  }
+}
